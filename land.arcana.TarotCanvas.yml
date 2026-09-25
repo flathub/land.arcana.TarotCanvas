@@ -19,12 +19,13 @@ modules:
       - pip3 install --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} .
       - install -Dm644 packaging/land.arcana.TarotCanvas.desktop ${FLATPAK_DEST}/share/applications/land.arcana.TarotCanvas.desktop
       - install -Dm644 packaging/icon.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/land.arcana.TarotCanvas.svg
-      - install -Dm644 tarot_canvas/resources/land.arcana.TarotCanvas.appdata.xml ${FLATPAK_DEST}/share/metainfo/land.arcana.TarotCanvas.metainfo.xml
+      - install -Dm644 tarot_canvas/resources/land.arcana.TarotCanvas.appdata.xml
+        ${FLATPAK_DEST}/share/metainfo/land.arcana.TarotCanvas.metainfo.xml
 
     sources:
       - type: archive
-        url: https://github.com/arcanaland/tarot-canvas/releases/download/v1.5.0/tarot-canvas-1.5.0.tar.gz
-        sha256: 0894fa7f8af681e1a3aab9f20c5755150673b43396da0a11147a2f7e4a51cdfc
+        url: https://github.com/arcanaland/tarot-canvas/releases/download/v1.5.1/tarot-canvas-1.5.1.tar.gz
+        sha256: f87f0edb7a067c4517bad2487d14c165835f5b58739d9ec8ec88718f7886a5cd
 
         x-checker-data:
           type: json
