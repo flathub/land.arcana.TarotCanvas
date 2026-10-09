@@ -1,0 +1,3 @@
+requests
+xdg-base-dirs
+poetry-core
