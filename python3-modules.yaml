@@ -51,8 +51,8 @@ modules:
         --prefix=${FLATPAK_DEST} "xdg-base-dirs" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/3c/7b/e1376eb2e5c3c0c7feca70687ba1def829d848b607a7e8d1811ea9a2c155/xdg_base_dirs-6.0.3-py3-none-any.whl
-        sha256: c80886a8f4e369d6148fdebd7abf182bf053ce6c744f7b7eec5853fec835ff44
+        url: https://files.pythonhosted.org/packages/0d/7b/57c565c9ffa1f0e6e4ae73f54fa760e92dc46ae343d5ad5a3f646ae8c891/xdg_base_dirs-6.1.0-py3-none-any.whl
+        sha256: 487d2f388037b310ca50fe322f706c41937db107215dccd060374e94fa16be6a
         x-checker-data:
           type: pypi
           name: xdg-base-dirs
