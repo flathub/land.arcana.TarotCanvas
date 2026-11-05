@@ -1,3 +1,4 @@
 requests
 xdg-base-dirs
+tomli-w
 poetry-core

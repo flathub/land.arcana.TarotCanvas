@@ -51,11 +51,24 @@ modules:
         --prefix=${FLATPAK_DEST} "xdg-base-dirs" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/3c/7b/e1376eb2e5c3c0c7feca70687ba1def829d848b607a7e8d1811ea9a2c155/xdg_base_dirs-6.0.3-py3-none-any.whl
-        sha256: c80886a8f4e369d6148fdebd7abf182bf053ce6c744f7b7eec5853fec835ff44
+        url: https://files.pythonhosted.org/packages/0d/7b/57c565c9ffa1f0e6e4ae73f54fa760e92dc46ae343d5ad5a3f646ae8c891/xdg_base_dirs-6.1.0-py3-none-any.whl
+        sha256: 487d2f388037b310ca50fe322f706c41937db107215dccd060374e94fa16be6a
         x-checker-data:
           type: pypi
           name: xdg-base-dirs
+          packagetype: bdist_wheel
+  - name: python3-tomli-w
+    buildsystem: simple
+    build-commands:
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+        --prefix=${FLATPAK_DEST} "tomli-w" --no-build-isolation
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/c7/18/c86eb8e0202e32dd3df50d43d7ff9854f8e0603945ff398974c1d91ac1ef/tomli_w-1.2.0-py3-none-any.whl
+        sha256: 188306098d013b691fcadc011abd66727d3c414c571bb01b1a174ba8c983cf90
+        x-checker-data:
+          type: pypi
+          name: tomli-w
           packagetype: bdist_wheel
   - name: python3-poetry-core
     buildsystem: simple
