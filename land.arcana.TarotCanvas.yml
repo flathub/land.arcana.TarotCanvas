@@ -29,8 +29,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/arcanaland/tarot-canvas/releases/download/v1.9.0/tarot-canvas-1.9.0.tar.gz
-        sha256: 36eb643a955121933d8b0aba382027d62a8bb4a051a21f39284c5b9e1f58d06c
+        url: https://github.com/arcanaland/tarot-canvas/releases/download/v1.9.1/tarot-canvas-1.9.1.tar.gz
+        sha256: 0fb082260848c872dd194766c60378920d71f3b83627d4ad0da452cf065ece78
 
         x-checker-data:
           type: json
